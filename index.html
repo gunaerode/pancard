@@ -859,7 +859,6 @@
                   type="checkbox"
                   name="address_check"
                   id="address_check"
-                  checked
                 />
               </td>
               <td>
@@ -887,15 +886,85 @@
                 </table>
               </td>
             </tr>
+            <tr>
+              <td></td>
+              <td>
+                <table style="border: none">
+                  <tr style="width: 80%; border: none">
+                    <td
+                      style="
+                        width: 50vw;
+                        border: none;
+                        border-right: 1px solid #000;
+                      "
+                    >
+                      <p style="font-size: 10px">
+                        <span>*</span> Name as per AADHAAR letter<br />or<br/>as per the enrollment ID of Aadhaar application form</p>
+                    </td>
+                    <td style="border: none">
+                      <input
+                        type="text"
+                        name="aahar_no_eid"
+                        id="aahar_no_eid"
+                      />
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <table style="border: none">
+                  <tr style="width: 80%; border: none">
+                    <td
+                      style="
+                        width: 50vw;
+                        border: none;
+                        border-right: 1px solid #000;
+                      "
+                    >
+                      <p style="font-weight: bold;">
+                        13. GSTN</p>
+                    </td>
+                    <td style="border: none">
+                      <input
+                        type="text"
+                        name="GSTN"
+                        id="GSTN"
+                      />
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td style="text-align: center">
+                <input type="checkbox" name="submit_proof_pan" id="submit_proof_pan" />
+              </td>
+              <td><p style="font-weight: bold">14. Mention other Permanent Account Numbers (PANs) if any Inadevertently allotted to you. <a href="#">Submit proof of surrendered PAN(s) along with the application.</a></p></td>
+            </tr>
+            <tr>
+              <td style="text-align: center">
+                <input type="radio" name="online_payment" id="online_payment" />
+              </td>
+              <td><p style="font-weight: bold">Online Payment</td>
+            </tr>
             <!-- Last tr -->
           </table>
           <!-- Main table end -->
           <table style="border: none;width: 100%;background: #FFFFDD;padding-top: 10px;">
             <tr style="border: none;">
-              <td style="border: none;" colspan="2"></td>
+              <td style="border: none;" colspan="2">For Paperless PAN Application: 
+                <label style="padding: 0px 10px;" for="paperless_yes"><input type="radio" name="paperless_pan" id="paperless_yes" checked> Yes</label>
+                <label style="padding: 0px 2px;" for="paperless_no"><input type="radio" name="paperless_pan" id="paperless_no"> No</label></td>
             </tr>
             <tr style="border: none;">
-              <td style="border: none;" colspan="2"></td>
+              <td style="border: none;" colspan="2">
+                <label style="padding: 0px 10px;" for="paperless_dsc"><input type="radio" name="paperless_dsc" id="paperless_dsc" checked> DSC</label>
+                <select style="width: 160px;" name="select_dsc" id="select_dsc"><option value="">--Select--</option></select>
+                <a style = "font-size: 10px;font-weight: bold;color: #A86D5F;" href="#">Guidlines for DSC user</a>
+              </td>
             </tr>
             <tr style="border: none;">
               <td style="border: none;">Upload Photo</td>
@@ -906,16 +975,16 @@
               <td style="border: none;"><input type="file" name="upload_document" id="upload_document"></td>
             </tr>
             <tr style="border: none;">
-              <td style="border: none;">ALREADY UPLOADED PHOTO:</td>
+              <td style="border: none;font-size: 12px;font-weight: 400;">ALREADY UPLOADED PHOTO:</td>
               <td style="border: none;"><input type="text" name="uploaded_photo" id="upoaded_photo"></td>
             </tr>
             <tr style="border: none;">
-              <td style="border: none;">ALREADY UPLOADED SIGNATURE:</td>
+              <td style="border: none;font-size: 12px;font-weight: 400;">ALREADY UPLOADED SIGNATURE:</td>
               <td style="border: none;"><input type="text" name="uploaded_signature" id="uploaded_signature"></td>
             </tr>
             <tr style="border: none;">
-              <td style="border: none;">ALREADY UPLOADED DOCUMENTS:</td>
-              <td style="border: none;"><textarea style="width: 30%;height: 140px;"></textarea><p></p><button type="submit">submit</button></td>
+              <td style="border: none;font-size: 12px;font-weight: 400;">ALREADY UPLOADED DOCUMENTS:</td>
+              <td style="border: none;"><textarea style="width: 30%;height: 140px;"></textarea><p style="margin-left: 10%"><button type="submit">submit</button></p></td>
             </tr>
           </table>
           </div>
